@@ -6,7 +6,7 @@ class EventsController < ApplicationController
   def new
     @event = Event.new
   end
-end
+
   def create
     Event.create(event_parameter)
     redirect_to root_path
